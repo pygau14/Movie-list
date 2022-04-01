@@ -1,0 +1,136 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.landingPage {
+  text-align: center;
+  width: 200px;
+  padding-top: 30px;
+  height: 80px;
+  color: black;
+  background: white;
+  transition: width 2s;
+}
+.landingPage:hover {
+  width: 400px;
+}
+
+.btn-started,
+#btn2,
+#btn1,
+#btn8 {
+  margin: 10px;
+  margin-left: 40px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: 4px white solid;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#inp1,
+#inp2 {
+  width: 200px;
+  height: 20px;
+}
+
+.mh {
+  text-align: center;
+}
+
+.mh:hover {
+  transform: scaleX(4);
+  transform: scaleY(3);
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#btn3,
+#btn4,
+#btn5,
+#btn6 {
+  width: 100px;
+  height: 30px;
+  border: 2px white solid;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+#btn5 {
+  margin-left: 1000px;
+}
+
+.btn7 {
+  width: 100px;
+  height: 40px;
+  font-family: Arial;
+  border: 4px white solid;
+  background-color: yellow;
+  cursor: pointer;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+.btn7:active {
+  background-color: red;
+}
+.rect {
+  border: 2px white solid;
+  margin: 10px;
+}
+
+.img-rect {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 20px;
+  transition: width 2s;
+}
+
+.img-rect:hover {
+  width: 350px;
+}
